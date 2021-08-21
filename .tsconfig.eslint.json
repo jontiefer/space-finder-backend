@@ -1,0 +1,18 @@
+{
+    "extends": "./tsconfig.json",
+    "files": [
+      ".eslintrc.js",
+      "jest.config.js"
+    ],
+    "include": [
+      "scripts/**/*",
+      "lib/**/*",
+      "bin/**/*",
+      "test/**/*"
+    ],
+    "exclude": [
+      "node_modules",
+      "coverage",
+      "cdk.out"
+    ]
+  }
