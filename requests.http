@@ -1,4 +1,28 @@
-@endpoint = https://c322j9sfr3.execute-api.us-east-1.amazonaws.com/prod/
+@endpoint = https://ct7o50n5ib.execute-api.us-east-1.amazonaws.com/prod/
+// @endpoint = https://c322j9sfr3.execute-api.us-east-1.amazonaws.com/prod/
 
-GET {{endpoint}}/hello/
+GET {{endpoint}}/spaces
+###
+
+GET {{endpoint}}/spaces?spaceId=5473bf49-8aaf-487e-822f-3b07103f376c
+###
+
+POST {{endpoint}}/spaces/
+Content-Type: application/json
+
+{
+  "location": "Los Angeles",
+  "name": "Best location"
+}
+###
+
+PUT {{endpoint}}/spaces?spaceId=d536eb08-22c0-4230-9cce-0ea06928918a
+Content-Type: application/json
+
+{
+  "location": "Updated Location",  
+}
+###
+
+GET {{endpoint}}/spaces?location=London
 ###

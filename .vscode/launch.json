@@ -12,7 +12,9 @@
       "args": ["${relativeFile}"],
       "env": {
         "AWS_REGION": "us-east-1",
-        "AWS_PROFILE": "iamadmin-general"
+        "AWS_PROFILE": "iamadmin-general",
+        "TABLE_NAME": "SpacesTable",
+        "PRIMARY_KEY": "spaceId"
       }
     }
   ]
